@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pymongo
+pillow
+pytesseract
+PyMuPDF
+transformers
+torch
+python-multipart
+pydantic-settings

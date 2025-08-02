@@ -1,0 +1,25 @@
+## POST /v1/analyse (using multipart/form-data)
+
+POST http://localhost:8000/v1/analyse
+Content-Type: multipart/form-data; boundary=boundary
+
+--boundary
+Content-Disposition: form-data; name="files"; filename="cv.pdf"
+Content-Type: application/pdf
+
+< ./cv.pdf
+--boundary
+Content-Disposition: form-data; name="query"
+
+Essa pessoa é Data Enginner?
+
+--boundary
+Content-Disposition: form-data; name="request_id"
+
+123e4567-e89b-12d3-a456-426614174000
+--boundary
+Content-Disposition: form-data; name="user_id"
+
+usuario_teste
+
+--boundary--
